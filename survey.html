@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teat123</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div id="header-content" class="header-content wrapper-content">
+                <img class="logo" src="assets/images/logo.png">
+            </div>
+        </header>
+    </div>
+    <main>
+        <section class="section-primary">
+            <div class="primary-content wrapper-content">
+                <form class="form" acion="">
+                    <div>
+                        <label><h3>您是否知道貴司現有或曾用過的端點防護產品為何？</h3></label>
+                        <label><input type="radio" name="product" value="edr">端點偵測及回應 (Endpoint Detection and Response, 或稱 EDR)</label><br>
+                        <label><input type="radio" name="product" value="av">防毒軟體 (Anti-Virus, Anti-Malware)</label><br>
+                        <label><input type="radio" name="product" value="both">以上皆有</label><br>
+                        <label><input type="radio" name="product" value="none">以上皆無</label><br>
+                        <label><input type="radio" name="product" value="idk">我不清楚</label>
+                    </div>
+                    <br>
+                    <br>
+                    <div >
+                        <label><h3>您是否知道貴司有哪些資安專職角色？</h3></label>
+                        <label><input type="radio" name="security" value="cisoandsoc">有資安長(CISO)及專門處理資安事件的應變部門</label><br>
+                        <label><input type="radio" name="security" value="cisoandit">僅有資安長(CISO)及一般資訊人員，無設立專門處理資安事件應變部門</label><br>
+                        <label><input type="radio" name="security" value="soc">僅有設立專門處理資安事件的應變部門，但沒有資安專責首長(Ex: 資安長)</label><br>
+                        <label><input type="radio" name="security" value="it">僅有一般資訊人員</label><br>
+                        <label><input type="radio" name="security" value="none">以上皆無</label><br>
+                        <label><input type="radio" name="security" value="idk">我不清楚</label>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <label><h3>您是否知道貴司現在或未來有計劃導入下列哪些資安規範？</h3></label>
+                        <label><input type="checkbox" name="ra" value="iso">ISO / IEC 27001 資訊安全管理系統（Information Security Management System, 簡稱 ISMS）</label><br>
+                        <label><input type="checkbox" name="ra" value="gcb">政府組態基準 (Government Configuration Baseline, 簡稱 GCB)</label><br>
+                        <label><input type="checkbox" name="ra" value="nist">NIST Cybersecurity Framework (由美國國家標準技術研究院提出之網路安全框架 , 或稱 NIST CSF)</label><br>
+                        <label><input type="checkbox" name="ra" value="isaca">ISACA COBIT 2019 (Control Objectives for Information and Related Technology, 由國際電腦稽核協會提出之資訊及相關技術的管理、控制與稽核框架)</label><br>
+                        <label><input type="checkbox" name="ra" value="hippa">HIPAA / HITECH (健康保險可攜性和責任法案)</label><br>
+                        <label><input type="checkbox" name="ra" value="custom">公司自訂資安政策</label><br>
+                        <label><input type="checkbox" name="ra" value="idk">我不清楚</label><br>
+                        <label><input type="checkbox" name="ra" value="other">其他</label>
+                        <input type="text" name="ra" >
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <label><h3>直面內心的恐懼：對於威脅事件，您最害怕遇到 </h3></label>
+                        <label><input type="radio" name="scary" value="apt">APT進階性持續威脅（針對性攻擊，安靜地逐漸掌控你的系統，做壞壞的事情）</label><br>
+                        <label><input type="radio" name="scary" value="ransom">Ransomware勒索威脅（立即! 馬上! 讓你感受到噴錢的痛苦）</label><br>
+                        <label><input type="radio" name="scary" value="espionage">Espionage間諜威脅（默默的，你的資料就都流出去了）</label><br>
+                        <label><input type="radio" name="scary" value="vulnerability">Vulnerability Exploitation 漏洞利用威脅（平常使用的得力工具反而變成資安漏洞，但苦無機會或甚至不知道該修補）</label><br>
+                        <label><input type="radio" name="scary" value="other">其他</label>
+                        <input type="text" name="scary" >
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <label><h3>直面內心的渴望：對於了解上述這些威脅情資，你希望哪方面帶來最大的幫助（只能選擇一項你認為最重要的）</h3></label>
+                        <label><input type="radio" name="requirement" value="knowlege">可以增加團隊對於網路安全的相關知識</label><br>
+                        <label><input type="radio" name="requirement" value="build">幫助公司資安防禦部署能更加堅強</label><br>
+                        <label><input type="radio" name="requirement" value="strategy">能更快速精準的向上呈報資安策略</label><br>
+                        <label><input type="radio" name="requirement" value="budget">幫助規劃年度資安預算時能有明確的方向</label><br>
+                        <label><input type="radio" name="requirement" value="indicator">快速得知關於自身相關區域（國家）或產業的高可信度情資</label><br>
+                        <label><input type="radio" name="requirement" value="other">其他</label>
+                        <input type="text" name="requirement" >
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <label><h3>找出理想型：對於威脅情資，在你心目中的理想形象，下述描述哪個最貼切？</h3></label>
+                        <label><input type="radio" name="ideal" value="cisoandsoc">入侵指標(IOC) : 可以直接匯入設備或軟體系統中，幫助確認是否已經或正在被駭客入侵</label><br>
+                        <label><input type="radio" name="ideal" value="cisoandit">網路資安新聞統整：協助快速了解世界上發生的資安大小事</label><br>
+                        <label><input type="radio" name="ideal" value="soc">駭客工具與手法的技術分析：協助技術人員了解更詳細的駭客技術，以進一步設置完善的防禦措施</label><br>
+                        <label><input type="radio" name="ideal" value="it">駭客行為與攻擊行為趨勢分析與洞見：協助資安決策者更好的規劃資安策略</label><br>
+                        <label><input type="radio" name="ideal" value="other">其他</label>
+                        <input type="text" name="ideal" >
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <h3>您的資訊</h3>
+                        姓名 <input type="text" name="name"><br>
+                        公司 <input type="text" name="company"><br>
+                        公司規模
+                            <select name="scale">
+                                <option value="0-20">＜20人</option>
+                                <option value="20-100">20~100人</option>
+                                <option value="100">100人以上</option>
+                            </select>
+                        <br>
+                        職位 <input type="text" name="title"><br>
+                        Email <input type="email" name="email">
+                    </div>
+                    <br>
+                    <p><input type="submit" class="link-button"value="推薦我的專屬酒品"></p>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-content wrapper-content">
+            <div>
+                <div class="footer__license">2023 Cybersec</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+</html>
