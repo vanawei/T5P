@@ -12,16 +12,18 @@
 
 <body>
     <div>
+ <!--
         <header>
-            <div id="header-content" class="header-content wrapper-content">
+            <div id="header-content" class="logo">
                 <img class="logo" src="assets/images/logo.png">
             </div>
         </header>
+-->
     </div>
     <main>
         <section class="section-primary">
-            <div class="primary-content wrapper-content">
-                <form class="form" acion="">
+            <div class="form">
+                <form class="form" name="survey" id="survey" method="" acion=" ">
                     <div>
                         <label><h3>您是否知道貴司現有或曾用過的端點防護產品為何？</h3></label>
                         <label><input type="radio" name="product" value="edr">端點偵測及回應 (Endpoint Detection and Response, 或稱 EDR)</label><br>
@@ -53,7 +55,7 @@
                         <label><input type="checkbox" name="ra" value="custom">公司自訂資安政策</label><br>
                         <label><input type="checkbox" name="ra" value="idk">我不清楚</label><br>
                         <label><input type="checkbox" name="ra" value="other">其他</label>
-                        <input type="text" name="ra" >
+                        <input type="text" name="ra-other" >
                     </div>
                     <br>
                     <br>
@@ -64,7 +66,7 @@
                         <label><input type="radio" name="scary" value="espionage">Espionage間諜威脅（默默的，你的資料就都流出去了）</label><br>
                         <label><input type="radio" name="scary" value="vulnerability">Vulnerability Exploitation 漏洞利用威脅（平常使用的得力工具反而變成資安漏洞，但苦無機會或甚至不知道該修補）</label><br>
                         <label><input type="radio" name="scary" value="other">其他</label>
-                        <input type="text" name="scary" >
+                        <input type="text" name="scary=other" >
                     </div>
                     <br>
                     <br>
@@ -76,7 +78,7 @@
                         <label><input type="radio" name="requirement" value="budget">幫助規劃年度資安預算時能有明確的方向</label><br>
                         <label><input type="radio" name="requirement" value="indicator">快速得知關於自身相關區域（國家）或產業的高可信度情資</label><br>
                         <label><input type="radio" name="requirement" value="other">其他</label>
-                        <input type="text" name="requirement" >
+                        <input type="text" name="requirement-other" >
                     </div>
                     <br>
                     <br>
@@ -87,7 +89,7 @@
                         <label><input type="radio" name="ideal" value="soc">駭客工具與手法的技術分析：協助技術人員了解更詳細的駭客技術，以進一步設置完善的防禦措施</label><br>
                         <label><input type="radio" name="ideal" value="it">駭客行為與攻擊行為趨勢分析與洞見：協助資安決策者更好的規劃資安策略</label><br>
                         <label><input type="radio" name="ideal" value="other">其他</label>
-                        <input type="text" name="ideal" >
+                        <input type="text" name="ideal-other" >
                     </div>
                     <br>
                     <br>
@@ -102,15 +104,23 @@
                                 <option value="100">100人以上</option>
                             </select>
                         <br>
-                        職位 <input type="text" name="title"><br>
+                        職位 <input type="text" placeholder="資訊工程師" name="title"><br>
                         Email <input type="email" name="email">
                     </div>
                     <br>
-                    <p><input type="submit" class="link-button"value="推薦我的專屬酒品"></p>
+                    <div>
+                        <div><input type="radio" name="r" id="r1" value="一"><label for="r1">选项一</label></div>
+                        <div><input type="radio" name="r" id="r2" value="二"><label for="r2">选项二</label></div>
+                        <div><input type="radio" name="r" id="r3" value="三"><label for="r3">选项三</label></div>
+                    </div>
+                    <div><input type="button" class="link-button" value="getTotal" onclick="javascript:getTotal();"></div>
+                    <p><button type="submit" class="submitBtn"; >推薦我的專屬酒品</button></p>
                 </form>
+                <p id="log"></p>
             </div>
         </section>
-        
+        <section>
+        </section>
     </main>
     <footer>
         <div class="footer-content wrapper-content">
@@ -120,5 +130,5 @@
         </div>
     </footer>
 </body>
-<script src="js/index.js"></script>
+<script src="js/survey.js"></script>
 </html>

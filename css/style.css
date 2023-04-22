@@ -48,6 +48,9 @@ footer {
   color: #000;
   font-size: 24px;
   text-decoration: underline;
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
 }
 
 .header-nav {
