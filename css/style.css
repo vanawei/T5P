@@ -106,6 +106,12 @@ a {
   color: #ffb500;
 }
 
+/*img*/
+.box-shadow {
+  box-shadow: #ffb7008e 0px 20px 50px -20px, #ffb7008e 0px 20px 20px -30px, #ffb7008e 0px -2px 6px 0px inset;
+}
+
+
 /* textbox, radio, checkbox */
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
@@ -335,7 +341,7 @@ a {
   border-color: #bbc1e1;
 }
 
-.aks-input[type="text"],[type="email"] {
+.aks-input[type="text"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -354,14 +360,40 @@ a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.aks-input[type="text"],[type="email"]:hover {
-  border-color: #275efe;
-}
-.aks-input[type="text"],[type="email"]:focus {
-  box-shadow: 0 0 0 2px #f5d062;
+.aks-input[type="text"]:hover {
   border-color: #f5d062;
-
-}/* 
+}
+.aks-input[type="text"]:focus {
+  box-shadow: 0 0 0 1px #ffffff;
+  border-color: #f5d062;
+}
+.aks-input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  border-radius: 7px;
+  padding: 8px 10px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: unset;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  border: 0.1rem solid #bbc1e1;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.aks-input[type="email"]:hover {
+  border-color: #f5d062;
+}
+.aks-input[type="email"]:focus {
+  box-shadow: 0 0 0 1px #ffffff;
+  border-color: #f5d062;
+}
+/* 
 .aks-input[type="text"],[type="email"]:disabled {
   background: #f6f8ff;
   cursor: not-allowed;
@@ -370,13 +402,13 @@ a {
 } */
 
 .aks-select-row {
-  width: 40%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
 }
-.aks-select-arrow {
+.aks-select-arrow { /*你要去哪裡？*/
   position: absolute;
   right: 8px;
   display: flex;
@@ -450,38 +482,6 @@ select.aks-input:disabled {
 }
 .aks-date-calender:hover {
   color: #275efe;
-}
-.aks-input[type="date"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 100%;
-  border-radius: 7px;
-  padding: 8px 10px;
-  outline: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: unset;
-  position: relative;
-  margin: 0;
-  cursor: pointer;
-  border: 0.1rem solid #bbc1e1;
-  background: #fff;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.aks-input[type="date"]:hover {
-  border-color: #275efe;
-}
-.aks-input[type="date"]:focus {
-  box-shadow: 0 0 0 2px rgba(39, 94, 254, 0.3);
-  border-color: #275efe;
-}
-.aks-input[type="date"]:disabled {
-  background: #f6f8ff;
-  cursor: not-allowed;
-  opacity: 0.9;
-  border-color: #bbc1e1;
 }
 
 /*textbox*/
