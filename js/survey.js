@@ -1,8 +1,3 @@
-// let getWine = document.getElementsByName("survey");
-// getWine.addEventListener("submit", (e) => {
-//   e.preventDefault();
-// });
-
 var numericalValues = new Array();
 numericalValues["edr"]= 10;
 numericalValues["av"]= 5;
@@ -54,13 +49,6 @@ function getTotal(){
     window.location.assign("wine_ts.html");
   }
 }
-
-// function getTotal(){
-//   window.location.assign("wine_ts.html");
-//   //window.open('wine_ts.html');
-// }
-
-
 
 // 取text值
 function processFormData() {
